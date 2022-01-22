@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(212, 45%, 89%);
+--Grayish-blue: hsl(220, 15%, 55%);
+--Dark-blue: hsl(218, 44%, 22%);
+}
+
+*, *::before, *::after{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%; 
+}
+
+body{
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  height: 100vh;
+
+}
+/* do i virtical center them by flex only? */
+.container{
+  background-color: var(--Light-gray);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  width: 30em;
+  background-color: var(--White);
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  border-radius: 1.5em;
+}
+/* ?should I adding text align center here or more upper parents? */
+
+.card header img{
+  width: 100%;
+  border-radius: 1em;
+}
+/* do i use cover ? when? what is most common way?  */
+
+.card .title{
+  margin: 1em .2em 0;
+  font-size: 2.2em;
+}
+
+.card .description{
+  margin: 2rem;
+  font-size: 1.5em;
+}
+
+
+
